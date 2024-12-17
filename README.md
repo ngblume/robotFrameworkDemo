@@ -80,9 +80,7 @@ print("Hello World !!")
 
     > [!NOTE]
     > Der Begriff "Virtual Environment" steht als Sinonym für alle möglichen Optionen dafür.
-    > 
     > PIPENV nutzt als "Technologie" für die Virtual Environments das Paket "virtualenv", welches auch mit TestStand kompatibel ist (ander als venv). 
-    > 
     > Im Folgenden wird die Kurzform "VENV" als allgemeiner Ausdruck für ein Virtual Environment verwendet und nicht gezielt für diese eine Lösung. Sonst ist mir das einfach zu viel Schreibarbeit...
 
     Bevor nun die notwendigen Pakete für diese Tutorial installiert werden (sollten), muss mindestens die Pakete-Auswahl, die für virtual environments mit pipenv erforerlich ist, installiert werden.
