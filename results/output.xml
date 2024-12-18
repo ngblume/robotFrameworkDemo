@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2024-12-18T01:10:30.809429" rpa="false" schemaversion="5">
+<suite id="s1" name="robotFrameworkDemo" source="C:\Projekte_GIT\_RobotFramework\robotFrameworkDemo">
+<suite id="s1-s1" name="01 FirstDemo" source="C:\Projekte_GIT\_RobotFramework\robotFrameworkDemo\01_FirstDemo">
+<suite id="s1-s1-s1" name="First" source="C:\Projekte_GIT\_RobotFramework\robotFrameworkDemo\01_FirstDemo\first.robot">
+<test id="s1-s1-s1-t1" name="First Test Case" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-18T01:10:30.864930" level="INFO">Hello world</msg>
+<arg>Hello world</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-18T01:10:30.864326" elapsed="0.001007"/>
+</kw>
+<doc>First test case to simply log a message to debug consoles</doc>
+<status status="PASS" start="2024-12-18T01:10:30.862347" elapsed="0.003582"/>
+</test>
+<doc>First test suite to just see a log output</doc>
+<status status="PASS" start="2024-12-18T01:10:30.858574" elapsed="0.009125"/>
+</suite>
+<status status="PASS" start="2024-12-18T01:10:30.855456" elapsed="0.014050"/>
+</suite>
+<status status="PASS" start="2024-12-18T01:10:30.832243" elapsed="0.038892"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="robotFrameworkDemo">robotFrameworkDemo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="01 FirstDemo">robotFrameworkDemo.01 FirstDemo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="First">robotFrameworkDemo.01 FirstDemo.First</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -147,45 +147,80 @@ print("Hello World !!")
     > Den Hinweis am Ende Kann man ruhig beheben. Also einfach der PATH Variable des Users hinzufügen, falls noch nicht erfolgt. Getestet werden kann das ganze gleich mit (Re)Build der PIPENV Umgebung...
     > Vermutlich muss der Pfad bei der System-weiten PATH Variable erg:anzt werden.
 
+    > [!WARNING]
+    > Sollte dieser Pfad nicht zu PATH hinzugefügt werden, werden viele der unten gelisteten Komanndos nicht direkt ausführbar sein.
+
 1. Recreation of the VENV via PIPENV
 
     An dieser Stelle soll nun das VENV wieder erzeugt werden, basierend auf dem vorhandenen Pipfile.
     Der Vollständigkeit halber wird im folgenden Punkt noch erläutert, wie man von Grund auf ein VENV mit PIPENV aufsetzen / starten würde.
 
+    > [!WARNING]
+    > Sollte kein Ordner namens ".venv" direkt neben dem Pipfile existieren (vorzugsweise komplett leer), wenn das VENV wieder hergetellt wird, so wird dieses unter einem zentralen Pfad im System angelegt.
+    > Der User sollte sich über die Auswirkungen hiervon bewusst sein.
+    > 
+    > ![alt text](_images/09.png)
 
+    Die folgenden Aufrufe erfolgen in einem Terminal, welches sich vom Pfad her im Verzeichnis mit dem Pipefile befindet.
+
+    > [!WARNING]
+    > Nochmals der Hinweis, dass ein Ordner ".venv" direkt neben dem Pipfile existieren sollte, sodass dort das VENV erzeugt wird.
+
+    ```PowerShell
+    pipenv install
+    ```
+
+    Nun befindet sich VENV im Ordner ".venv" samt eines gitignore Files, welches den kompletten ".venv" Ordner aus der Versionierung nimmt.
+
+    ![alt text](_images/10.png)
 
 1. Creation of the VENV via PIPENV
 
     - Create an pipenv environment
-        ```python
-        python -m pipenv install
+        ```PowerShell
+        pipenv install
         ```
 
     - Install packages in the pipenv environment (and add them to the Pipfile for later recreation)
-        ```python
-        python -m pipenv install "PackageName"
+        ```PowerShell
+        pipenv install "PackageName"
         ```
 
     - Regularly run the function to update the Pipfile lock
-        ```python
-        python -m pipenv lock
+        ```PowerShell
+        pipenv lock
         ```
     
     - To get list of cmds for pipenv, run:
-        ```python
-        python -m pipenv
+        ```PowerShell
+        pipenv
         ```
 
     - examples are 
         - graph > all dependencies
 
-            ```python
+            ```PowerShell
             python -m pipenv graph
             ```
 
         - requirements to produce a requirements.txt with all packages listed (NOT used for (re)creation of virtualenv)
 
-            ```python
+            ```PowerShell
             python -m pipenv requirements
             ```
     
+        ![alt text](_images/08.png)
+
+    > [!NOTE]
+    > For installing local WHL files as packages, run for example
+    > 
+    > ```PowerShell
+    > python -m pipenv install .\\\__WHL\\netifaces-0.11.0-cp39-cp39-win_amd64.whl
+    > ```
+    > 
+    > This will result in entry in Pipfile (after running "python -m pipenv lock") like such:
+    > ```PowerShell
+    > netifaces = {file = "\__WHL\\\\netifaces-0.11.0-cp39-cp39-win_amd64.whl"}
+    > ```
+    > directly allowing recreation with these local files
+

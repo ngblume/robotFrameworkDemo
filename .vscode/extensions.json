@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "d-biehl.robotcode",
+        "d-biehl.robotcode-gherkin",
+        "tamasfe.even-better-toml",
+        "jaimeolivares.yuml",
+        "kejun.markdown-alert",
+        "mhutchie.git-graph",
+        "donjayamanne.python-environment-manager",
+        "littlefoxteam.vscode-python-test-adapter",
+        "connorshea.vscode-test-explorer-status-bar",
+        "hbenl.vscode-test-explorer"
+    ]
+}
