@@ -224,3 +224,54 @@ print("Hello World !!")
     > ```
     > directly allowing recreation with these local files
 
+1. Open first robot file with first test case and run it
+
+    - VS Code Workspace öffnen
+
+        Rechtsklick auf das Workspace file > "Open with Code"
+
+    - Öffnen der Datei "first.robot" im Verzeichnis "01_FirstDemo" im Workspace im VS Code
+
+    - Ausfürhung verschiedener Testcases mittels der kleinen Play-Buttons vor verschiedenen Sections im robot file
+
+        ![alt text](_images/11.png)
+
+    - In diesem Fall laufen alle Tests durch und die Ausgabe auf der Debug Console erfolgt wir gewünscht
+
+        ![alt text](_images/12.png)
+
+1. Open more advanced test cases, run them and check results
+
+    - Öffnen der Datei "01_keyword_driven.robot" im Verzeichnis "02_RobotDemo" im Workspace im VS Code
+
+    - Ausführung aller Tests mittels des Play-Buttons vor 
+
+        ![alt text](_images/16.png)
+
+    - Check the console log for progress and overall, preliminary results
+
+        ![alt text](_images/17.png)
+
+    - Check the detailled logs and reports (created with the standard template in this case)
+        Einach auf den Link im Konsolen-Output klicken.
+
+        > [!WARNING]
+        > Dieses Beispiel bentzt eine Library-interne Funktion zur Ableitung der PASS / FAILED Resultate.
+        > Dies ist ein SONDERFALL und nicht zu empfehlen!!
+
+        ![alt text](_images/18.png)
+
+        ![alt text](_images/19.png)
+
+1. Useful tipps und links
+    - Um die Library vor dem Keyword mit anzuzeigen, muss (kurzzeitig) die Tasten-Kombination "Strg + Alt" gedrückt gehalten werden
+
+        ![alt text](_images/13.png)
+
+        ![alt text](_images/14.png)
+
+    - Mittels Rechtsklick -> Go to definition auf ein Keyword, wird direkt zur Implementierung gesprungen
+
+        ![alt text](_images/15.png)
+
+    - https://www.youtube.com/watch?v=7Uad_250YuI
